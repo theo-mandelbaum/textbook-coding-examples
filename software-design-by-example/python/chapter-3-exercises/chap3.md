@@ -34,3 +34,43 @@ Odds of collision: 1 - (.75 x .50 x .25) = 1 - .09375 = 0.90625
 
 # Exercise 2 can be found in chap3.py
 
+
+# Exercise 3: Big Oh
+
+## Question:
+
+Chapter 1 said that as the number of components in a system grows, the complexity of the system increases rapidly. How fast is “rapidly” in big-oh terms?
+
+## My Conclusion:
+
+After revisiting Big-Oh time complexity through my current coursework and the readings in this book, I have concluded that rapidly in big-oh terms includes both exponential and factorial growth rates. The largest difference in growth appears in those two (exponential and factorial) time complexities. While O(n^3) does grow faster than O(n), the difference between two polynomial terms is not as large as the difference between a polynomial term and an exponential term.
+
+For example, say the input size of an algorithm increased by a factor of two. To find the increase in runnning time, we would solve for the output of the following equation:
+
+f(2n) / f(n)
+
+# Let's use f(n) = n^3:
+
+f(2n) = (2n)^3 = 8n^3
+f(n) = n^3
+
+So, f(2n) / f(n) = 8n^3 / n^3,
+Which allows us to cancel out the n^3 in the numerator and denominator,
+resulting in f(2n) / f(n) = 8
+
+This means that the running time of n^3 increases by 8, as the input size of the algorithm increase by a factor of 2
+
+# Now, let's use f(n) = 2^n
+
+f(2n) = 2^(2n) = (2^n) * (2^n)
+f(n) = 2^n
+
+So, f(2n) / f(n) = (2^n) * (2^n) / 2^n
+Here we can cancel out a 2^n in the numerator and get rid of the 2^n in the denominator,
+which results in f(2n) / f(n) = 2^n
+
+This means that the running time of 2^n increases by 2^n, as the input size of the algorithm increase by a factor of 2
+
+## Final statment
+
+As you can see, the difference between n^3 and 2^n is huge, even when the input size is only increasing by a factor of 2. So, I would consider any term 2^n and larger to be a "rapid" growth rate.
