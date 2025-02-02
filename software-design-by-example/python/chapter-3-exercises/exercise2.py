@@ -1,8 +1,11 @@
 # Exercise 2: Streaming I/O
+
 # Question:
 # A streaming API delivers data one piece at a time rather than all at once.
 # Read the documentation for the update method of hashing objects in Python’s hashing module
 # and rewrite the duplicate finder from this chapter to use it.
+
+# Code runs with the command line input: python3 chap3.py file1 file2 file3 etc.
 
 import sys
 from hashlib import sha256
@@ -16,7 +19,9 @@ def find_groups(filenames):
     groups = {}
     for fn in filenames:
         data = open(fn, "rb").read()
-        hash_code = sha256().update(data)
+        hash_object = sha256()
+        hash_object.update(data)
+        hash_code = hash_object.hexdigest()
         if hash_code not in groups:
             groups[hash_code] = set()
         groups[hash_code].add(fn)

@@ -74,3 +74,24 @@ This means that the running time of 2^n increases by 2^n, as the input size of t
 ## Final statment
 
 As you can see, the difference between n^3 and 2^n is huge, even when the input size is only increasing by a factor of 2. So, I would consider any term 2^n and larger to be a "rapid" growth rate.
+
+
+# Exercise 4: The hash Function
+
+## Question:
+
+Read the documentation for Python’s built-in hash function.
+
+Why do hash(123) and hash("123") work when hash([123]) raises an exception?
+
+## My Answer:
+
+After reviewing Python's built in hash function, the reasong why hash([123]) doesn't work is because the argument used for the function is a MUTABLE list. However, the function only works for immutable collections of data.
+
+## Conclusion:
+
+So, the reason why the hashlib import is useful is because you can use it for mutable collections of data as well.
+
+
+# Exercise 5 can be found in chap3.py
+

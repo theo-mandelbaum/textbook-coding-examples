@@ -13,4 +13,10 @@ Exercise 3 (located in chap3.md):
 What did I learn from this exercise?
 - While I have worked with Big-Oh notation before in previous classes (Data Structures and Algorithms), I have never had to sit down and really consider what is considered "rapid" growth. Doing so allowed me to truly reflect on what I've learned about growth rates and time complexity. I've learned that the most accurate way to compare growth rates for algorithms is by comparing how they grow when the input size is increased. So, that's what I did. I doubled the input size for each type of algorithmic growth rate (constant time, logarithmic, linear, quadratic, cubic, exponential, factorial). The jump from cubic to exponential is what I considered to be most significant when evaluating "rapid growth".
 
-Exercise 4 ()
+Exercise 4 (located in chap3.md):
+
+What did I learn from this exercise?
+- Something that I learned while exploring Python's built in hash function is that the built in function generally has better performance than the functions from the hashlib import. So, with some pieces of data I would use the built in function, while the others would require me to use the hashlib import. This is an idea that I can apply to other imports as well. Then, I can find the most effective way to utilize imported functions, along with built in functions.
+
+Exercise 5 (located in chap3.py):
+
