@@ -1,6 +1,13 @@
+What topics were discussed in this chapter?
+- Hashing files
+    - Hashing files efficiently
+    - Relating this efficiency to time complexity, specifically Big-Oh notation
+- How to improve the original hashing method provided in the chapter
+
 Exercise 1 (located in chap3.md):
 
-
+What did I learn from this exercise?
+- Aside from simple statistic probability, I feel that my answer to this question can be applied to other problems related to systems and algorithmic design. The odds of collision depend on each other and how many files we are comparing. In a real world scenario, most programs contain many of dependencies. It's always wise to consider all of the dependencies before trying to solve a problem. Otherwise, you may encounter an error that isn't immediately apparent.
 
 Exercise 2 (located in chap3.py):
 
@@ -20,3 +27,5 @@ What did I learn from this exercise?
 
 Exercise 5 (located in chap3.py):
 
+What did I learn from this exercise?
+- To answer the question asked by the book (How evenly deistributed are the hash codes?), I would say that the hash codes are very evenly distributed. From what I can observe, the hash values seem to get more evenly distributed, as the size of my input file grows. After seeing this, I did some searching about why this is case. I found that SHA-256 is designed to produce uniform distributions, so as more unique hash values are introduced, the distribution of these will become more uniform.

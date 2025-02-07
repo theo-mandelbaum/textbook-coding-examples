@@ -21,7 +21,7 @@ A colleague of yours says this means that if we hash four files, there’s only 
 
 So, we are comparing four files, all 2 bits long. We know the chances of collision increase by 25% for each file that is compared, creating the chart that we have above.
 
-We know that our colleague's interpretation is wrong because the odd's of collision depend on each other and how many files there are.
+We know that our colleague's interpretation is wrong because the odds of collision depend on each other and how many files there are.
 Since it is dependent, we cannot just take the fourth percentage (75%). We must take into account that files 2-4 all have a chance of collision
 
 The way to calculate this is finding the odds of no collision and then subtracting that number from 1.
