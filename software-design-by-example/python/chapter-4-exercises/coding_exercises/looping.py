@@ -20,6 +20,27 @@ class TopMatcher:
             return start == len(text)
 
 
+# Exercise 3: Find One or More
+class OneOrMore:
+    def __init__(self, pattern):
+        self.pattern = pattern
+    
+    def _match(self, text, start):
+        end = self.pattern._match(text, start)
+        if end is None:
+            return None
+        
+        last_match = end
+        while True:
+            end = self.pattern._match(text, start)
+            if end is None:
+                break
+            last_match = end
+        
+        return last_match
+    
+
+
 # [null]
 class Null:
     def _match(self, text, start):
